@@ -1,55 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="về web online">
-        <meta name="author" content="Thongme">
-        <meta name="keywords" content="Thongme web">
-        <title>Thongme Web</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LUGX — Gaming</title>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <h1>Làm thử đi</h1>
-        <form id="quizForm">
-            <div class="quention">
-                <p>1/. 1 + 1 = ?</p>
-                <input type="radio" name="q1" value="a">a. 1 ||
-                <input type="radio" name="q1" value="b">b. 11 ||
-                <input type="radio" name="q1" value="c">c. 3 ||
-                <input type="radio" name="q1" value="d">d. đúng hết
-            </div><br>
-            <div class="quention">
-                <p>2/. 1 - 1 = ?</p>
-                <input type="radio" name="q2" value="a">a. 2 ||
-                <input type="radio" name="q2" value="b">b. 11 ||
-                <input type="radio" name="q2" value="c">c. 3 ||
-                <input type="radio" name="q2" value="d">d. đúng hết
-            </div><br>
-            <div class="quention">
-                <p>3/. 1 * 1 = ?</p>
-                <input type="radio" name="q3" value="a">a. 2 ||
-                <input type="radio" name="q3" value="b">b. 11 ||
-                <input type="radio" name="q3" value="c">c. 3 ||
-                <input type="radio" name="q3" value="d">d. đúng hết
-            </div><br>
-            <div class="quention">
-                <p>4/. 1 / 1 = ?</p>
-                <input type="radio" name="q4" value="a">a. 2 ||
-                <input type="radio" name="q4" value="b">b. 11 ||
-                <input type="radio" name="q4" value="c">c. 3 ||
-                <input type="radio" name="q4" value="d">d. đúng hết
-            </div><br>
-            <div class="quention">
-                <p>5/. Bạn làm được mấy câu?</p>
-                <input type="radio" name="q5" value="a">a. 1 câu ||
-                <input type="radio" name="q5" value="b">b. 2 câu ||
-                <input type="radio" name="q5" value="c">c. hơn 2 câu ||
-                <input type="radio" name="q5" value="d">d. sai hết
-            </div><br>
-            <div class="toan">
-                <button onclick="login()">Nộp bài</button><br>
-            </div>
-        </form>
+    <body
+        class="bg-gradient-to-br from-zinc-900 via-purple-900 to-pink-900 text-gray-100 antialiased">
+        <!-- NAV -->
+        <header
+            class="sticky top-0 z-40 bg-zinc-950/60 backdrop-blur border-b border-zinc-800">
+            <nav
+                class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <a class="flex items-center gap-3 hover:text-pink-400" href="#">
+                    <div
+                        class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-indigo-500 flex items-center justify-center font-extrabold text-black transition-transform hover:scale-110">LG</div>
+                    <span class="font-bold text-lg">LUGX</span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm">
+                    <a href="#features" class="hover:text-pink-400">Features</a>
+                    <a href="#gallery" class="hover:text-pink-400">Gallery</a>
+                    <a href="#pricing" class="hover:text-pink-400">Pricing</a>
+                    <a href="#contact" class="hover:text-pink-400">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuBtn"
+                        class="p-2 rounded-md glass hover:bg-pink-600/40">Menu</button>
+                </div>
+            </nav>
+        </header>
+        <!-- HERO -->
+        <main class="max-w-7xl mx-auto px-6 py-16">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1
+                        class="text-4xl md:text-5xl font-extrabold leading-tight">Build
+                        your next <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">Gaming</span>
+                        Experience</h1>
+                    <p class="mt-6 text-gray-300 max-w-xl">LUGX is a free
+                        responsive HTML template for gaming and tech projects.
+                        Ready to customize with TailwindCSS and your images.</p>
+                    <div class="mt-8 flex gap-4">
+                        <a href="#"
+                            class="px-6 py-3 rounded-lg bg-pink-600/90 font-semibold shadow-lg hover:bg-pink-700/90">Download</a>
+                        <a href="#"
+                            class="px-6 py-3 rounded-lg glass border hover:border-pink-500">Live
+                            demo</a>
+                    </div>
+                    <div
+                        class="mt-6 flex items-center gap-4 text-sm text-gray-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor"><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z" /></svg>
+                            <span>Free • Responsive • Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1400&auto=format&fit=crop&crop=entropy"
+                        alt="gaming hero"
+                        class="w-full rounded-2xl shadow-2xl object-cover h-80 md:h-96 transition-transform hover:scale-105" />
+                    <div
+                        class="absolute -bottom-6 left-6 glass px-4 py-2 rounded-xl shadow-lg flex items-center gap-3 hover:bg-pink-600/30">
+                        <img
+                            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=80&auto=format&fit=crop&crop=entropy"
+                            class="w-12 h-12 rounded-full hover:scale-110 transition-transform"
+                            alt="avatar">
+                        <div>
+                            <div class="text-xs text-gray-300">Featured</div>
+                            <div class="font-semibold">Top Streamers</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FEATURES -->
+            <section id="features"
+                class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl glass border hover:border-pink-500">
+                    <h3
+                        class="font-bold text-lg text-pink-400 group-hover:text-pink-500">Low
+                        Latency</h3>
+                    <p class="mt-2 text-sm text-gray-300">Optimized servers and
+                        minimal ping for smooth gameplay.</p>
+                </div>
+                <div class="p-6 rounded-2xl glass border hover:border-pink-500">
+                    <h3 class="font-bold text-lg text-pink-400">Custom
+                        Matches</h3>
+                    <p class="mt-2 text-sm text-gray-300">Create tournaments and
+                        private lobbies with ease.</p>
+                </div>
+                <div class="p-6 rounded-2xl glass border hover:border-pink-500">
+                    <h3
+                        class="font-bold text-lg text-pink-400">Cross-platform</h3>
+                    <p class="mt-2 text-sm text-gray-300">Play on PC, console or
+                        mobile without limitations.</p>
+                </div>
+            </section>
+
+            <!-- GALLERY -->
+            <section id="gallery" class="mt-20">
+                <h2 class="text-2xl font-bold">Gallery</h2>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="img/img1.png"
+                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
+                    <img src="img/img3.png"
+                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
+                    <img src="img/img4.png"
+                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
+                    <img src="img/img1.png"
+                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
+                </div>
+            </section>
+
+            <!-- PRICING -->
+            <section id="pricing" class="mt-20">
+                <h2 class="text-2xl font-bold">Pricing</h2>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="p-6 rounded-2xl glass border hover:border-pink-500">
+                        <div class="text-sm">Basic</div>
+                        <div class="mt-2 font-bold text-2xl">Free</div>
+                        <p class="mt-4 text-sm text-gray-300">Perfect for
+                            starting out.</p>
+                    </div>
+                    <div
+                        class="p-6 rounded-2xl border bg-gradient-to-br from-pink-600 to-indigo-600 hover:from-pink-500 hover:to-indigo-500">
+                        <div class="text-sm text-white">Pro</div>
+                        <div class="mt-2 font-bold text-2xl text-white">$9 /
+                            mo</div>
+                        <p class="mt-4 text-sm text-white">For serious gamers
+                            and streamers.</p>
+                    </div>
+                    <div
+                        class="p-6 rounded-2xl glass border hover:border-pink-500">
+                        <div class="text-sm">Enterprise</div>
+                        <div class="mt-2 font-bold text-2xl">Contact</div>
+                        <p class="mt-4 text-sm text-gray-300">Custom solutions
+                            for teams.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACT / FOOTER -->
+            <footer id="contact" class="mt-20 py-12 border-t border-gray-800">
+                <div class="max-w-4xl mx-auto text-center text-gray-300">
+                    <h3 class="text-xl font-bold">Stay in the loop</h3>
+                    <p class="mt-2">Subscribe for updates, tournaments, and
+                        giveaways.</p>
+                    <form
+                        class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+                        <input
+                            class="px-4 py-3 rounded-lg w-full sm:w-auto text-black focus:ring focus:ring-pink-500"
+                            placeholder="Your email" />
+                        <button
+                            class="px-6 py-3 rounded-lg bg-pink-600/90 font-semibold hover:bg-pink-700">Subscribe</button>
+                    </form>
+                    <p class="mt-6 text-sm text-gray-500 hover:text-pink-400">©
+                        LUGX - Free template clone</p>
+                </div>
+            </footer>
+
+        </main>
+
     </body>
 </html>
