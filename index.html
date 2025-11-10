@@ -1,173 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>LUGX — Gaming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classy Login Form</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+    body {
+      background-image: url('img/img.png');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
     </head>
+
     <body
-        class="bg-gradient-to-br from-zinc-900 via-purple-900 to-pink-900 text-gray-100 antialiased">
-        <!-- NAV -->
-        <header
-            class="sticky top-0 z-40 bg-zinc-950/60 backdrop-blur border-b border-zinc-800">
-            <nav
-                class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <a class="flex items-center gap-3 hover:text-pink-400" href="#">
-                    <div
-                        class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-indigo-500 flex items-center justify-center font-extrabold text-black transition-transform hover:scale-110">LG</div>
-                    <span class="font-bold text-lg">LUGX</span>
-                </a>
-                <div class="hidden md:flex items-center gap-6 text-sm">
-                    <a href="#features" class="hover:text-pink-400">Features</a>
-                    <a href="#gallery" class="hover:text-pink-400">Gallery</a>
-                    <a href="#pricing" class="hover:text-pink-400">Pricing</a>
-                    <a href="#contact" class="hover:text-pink-400">Contact</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="menuBtn"
-                        class="p-2 rounded-md glass hover:bg-pink-600/40">Menu</button>
-                </div>
-            </nav>
-        </header>
-        <!-- HERO -->
-        <main class="max-w-7xl mx-auto px-6 py-16">
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h1
-                        class="text-4xl md:text-5xl font-extrabold leading-tight">Build
-                        your next <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">Gaming</span>
-                        Experience</h1>
-                    <p class="mt-6 text-gray-300 max-w-xl">LUGX is a free
-                        responsive HTML template for gaming and tech projects.
-                        Ready to customize with TailwindCSS and your images.</p>
-                    <div class="mt-8 flex gap-4">
-                        <a href="#"
-                            class="px-6 py-3 rounded-lg bg-pink-600/90 font-semibold shadow-lg hover:bg-pink-700/90">Download</a>
-                        <a href="#"
-                            class="px-6 py-3 rounded-lg glass border hover:border-pink-500">Live
-                            demo</a>
-                    </div>
-                    <div
-                        class="mt-6 flex items-center gap-4 text-sm text-gray-300">
-                        <div class="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor"><path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z" /></svg>
-                            <span>Free • Responsive • Tailwind</span>
-                        </div>
-                    </div>
-                </div>
+        class="flex items-center justify-center min-h-screen bg-black bg-opacity-60">
 
+        <div
+            class="bg-white bg-opacity-10 backdrop-blur-md p-10 rounded-lg shadow-2xl text-center w-full max-w-md border border-white/20 animate-fadeInUp hover:shadow-pink-600/30 hover:scale-105 transform transition-all duration-500">
+
+            <h1 class="text-3xl font-bold text-white mb-8 text-shadow">Classy
+                Login Form</h1>
+
+            <form class="space-y-6">
+
+                <!-- Username -->
                 <div class="relative">
-                    <img
-                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1400&auto=format&fit=crop&crop=entropy"
-                        alt="gaming hero"
-                        class="w-full rounded-2xl shadow-2xl object-cover h-80 md:h-96 transition-transform hover:scale-105" />
-                    <div
-                        class="absolute -bottom-6 left-6 glass px-4 py-2 rounded-xl shadow-lg flex items-center gap-3 hover:bg-pink-600/30">
-                        <img
-                            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=80&auto=format&fit=crop&crop=entropy"
-                            class="w-12 h-12 rounded-full hover:scale-110 transition-transform"
-                            alt="avatar">
-                        <div>
-                            <div class="text-xs text-gray-300">Featured</div>
-                            <div class="font-semibold">Top Streamers</div>
-                        </div>
-                    </div>
+                    <input type="text" id="username" required
+                        class="peer w-full bg-transparent border-b-2 border-gray-400 text-white placeholder-transparent focus:outline-none focus:border-pink-500 transition duration-300 py-2" />
+                    <label for="username"
+                        class="absolute left-0 top-2 text-gray-300 text-sm transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-sm peer-focus:text-pink-400">
+                        User name
+                    </label>
                 </div>
-            </section>
-            <!-- FEATURES -->
-            <section id="features"
-                class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-6 rounded-2xl glass border hover:border-pink-500">
-                    <h3
-                        class="font-bold text-lg text-pink-400 group-hover:text-pink-500">Low
-                        Latency</h3>
-                    <p class="mt-2 text-sm text-gray-300">Optimized servers and
-                        minimal ping for smooth gameplay.</p>
+                <!-- Password -->
+                <div class="relative">
+                    <input type="password" id="password" required
+                        class="peer w-full bg-transparent border-b-2 border-gray-400 text-white placeholder-transparent focus:outline-none focus:border-pink-500 transition duration-300 py-2" />
+                    <label for="password"
+                        class="absolute left-0 top-2 text-gray-300 text-sm transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-sm peer-focus:text-pink-400">
+                        Password
+                    </label>
                 </div>
-                <div class="p-6 rounded-2xl glass border hover:border-pink-500">
-                    <h3 class="font-bold text-lg text-pink-400">Custom
-                        Matches</h3>
-                    <p class="mt-2 text-sm text-gray-300">Create tournaments and
-                        private lobbies with ease.</p>
+                <!-- Remember / Forgot -->
+                <div
+                    class="flex justify-between items-center text-sm text-white">
+                    <label class="flex items-center"><input type="checkbox"
+                            class="mr-2 accent-pink-500" /> Remember me</label>
+                    <a href="#" class="text-pink-400 hover:underline">Forgot
+                        Password?</a>
                 </div>
-                <div class="p-6 rounded-2xl glass border hover:border-pink-500">
-                    <h3
-                        class="font-bold text-lg text-pink-400">Cross-platform</h3>
-                    <p class="mt-2 text-sm text-gray-300">Play on PC, console or
-                        mobile without limitations.</p>
-                </div>
-            </section>
+                <!-- Login button -->
+                <button type="submit"
+                    class="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-600/40">
+                    Login
+                </button>
+                <!-- Or -->
+                <div class="text-white text-shadow">or</div>
 
-            <!-- GALLERY -->
-            <section id="gallery" class="mt-20">
-                <h2 class="text-2xl font-bold">Gallery</h2>
-                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <img src="img/img1.png"
-                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
-                    <img src="img/img3.png"
-                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
-                    <img src="img/img4.png"
-                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
-                    <img src="img/img1.png"
-                        class="w-full h-36 object-cover rounded-lg shadow hover:scale-105 transition-transform" />
+                <!-- Social buttons -->
+                <div class="flex justify-center space-x-4">
+                    <a href="#"
+                        class="flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/40">
+                        <i class="fab fa-facebook-f mr-2"></i> Facebook
+                    </a>
+                    <a href="#"
+                        class="flex items-center bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-500/40">
+                        <i class="fab fa-twitter mr-2"></i> Twitter
+                    </a>
                 </div>
-            </section>
 
-            <!-- PRICING -->
-            <section id="pricing" class="mt-20">
-                <h2 class="text-2xl font-bold">Pricing</h2>
-                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div
-                        class="p-6 rounded-2xl glass border hover:border-pink-500">
-                        <div class="text-sm">Basic</div>
-                        <div class="mt-2 font-bold text-2xl">Free</div>
-                        <p class="mt-4 text-sm text-gray-300">Perfect for
-                            starting out.</p>
-                    </div>
-                    <div
-                        class="p-6 rounded-2xl border bg-gradient-to-br from-pink-600 to-indigo-600 hover:from-pink-500 hover:to-indigo-500">
-                        <div class="text-sm text-white">Pro</div>
-                        <div class="mt-2 font-bold text-2xl text-white">$9 /
-                            mo</div>
-                        <p class="mt-4 text-sm text-white">For serious gamers
-                            and streamers.</p>
-                    </div>
-                    <div
-                        class="p-6 rounded-2xl glass border hover:border-pink-500">
-                        <div class="text-sm">Enterprise</div>
-                        <div class="mt-2 font-bold text-2xl">Contact</div>
-                        <p class="mt-4 text-sm text-gray-300">Custom solutions
-                            for teams.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- CONTACT / FOOTER -->
-            <footer id="contact" class="mt-20 py-12 border-t border-gray-800">
-                <div class="max-w-4xl mx-auto text-center text-gray-300">
-                    <h3 class="text-xl font-bold">Stay in the loop</h3>
-                    <p class="mt-2">Subscribe for updates, tournaments, and
-                        giveaways.</p>
-                    <form
-                        class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-                        <input
-                            class="px-4 py-3 rounded-lg w-full sm:w-auto text-black focus:ring focus:ring-pink-500"
-                            placeholder="Your email" />
-                        <button
-                            class="px-6 py-3 rounded-lg bg-pink-600/90 font-semibold hover:bg-pink-700">Subscribe</button>
-                    </form>
-                    <p class="mt-6 text-sm text-gray-500 hover:text-pink-400">©
-                        LUGX - Free template clone</p>
-                </div>
-            </footer>
+            </form>
+            <p class="text-xs text-gray-200 mt-8 text-shadow">
+                © 2025 Classy Login Form. All rights reserved | Design by You.
+            </p>
 
-        </main>
+        </div>
 
     </body>
 </html>
