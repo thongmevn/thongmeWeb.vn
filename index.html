@@ -1,82 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Classy Login Form</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-    body {
-      background-image: url('img/img.png');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
-
+        <title>Login Form - Glassmorphism</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <div class="login-container">
+            <form class="login-form">
+                <h2>Login</h2>
 
-    <body
-        class="flex items-center justify-center min-h-screen bg-black bg-opacity-60">
-
-        <div
-            class="bg-white bg-opacity-10 backdrop-blur-md p-10 rounded-lg shadow-2xl text-center w-full max-w-md border border-white/20 animate-fadeInUp hover:shadow-pink-600/30 hover:scale-105 transform transition-all duration-500">
-
-            <h1 class="text-3xl font-bold text-white mb-8 text-shadow">Classy
-                Login Form</h1>
-
-            <form class="space-y-6">
-
-                <!-- Username -->
-                <div class="relative">
-                    <input type="text" id="username" required
-                        class="peer w-full bg-transparent border-b-2 border-gray-400 text-white placeholder-transparent focus:outline-none focus:border-pink-500 transition duration-300 py-2" />
-                    <label for="username"
-                        class="absolute left-0 top-2 text-gray-300 text-sm transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-sm peer-focus:text-pink-400">
-                        User name
-                    </label>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email ID</label>
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
                 </div>
-                <!-- Password -->
-                <div class="relative">
+
+                <div class="input-group">
                     <input type="password" id="password" required
-                        class="peer w-full bg-transparent border-b-2 border-gray-400 text-white placeholder-transparent focus:outline-none focus:border-pink-500 transition duration-300 py-2" />
-                    <label for="password"
-                        class="absolute left-0 top-2 text-gray-300 text-sm transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-sm peer-focus:text-pink-400">
-                        Password
-                    </label>
-                </div>
-                <!-- Remember / Forgot -->
-                <div
-                    class="flex justify-between items-center text-sm text-white">
-                    <label class="flex items-center"><input type="checkbox"
-                            class="mr-2 accent-pink-500" /> Remember me</label>
-                    <a href="#" class="text-pink-400 hover:underline">Forgot
-                        Password?</a>
-                </div>
-                <!-- Login button -->
-                <button type="submit"
-                    class="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-600/40">
-                    Login
-                </button>
-                <!-- Or -->
-                <div class="text-white text-shadow">or</div>
-
-                <!-- Social buttons -->
-                <div class="flex justify-center space-x-4">
-                    <a href="#"
-                        class="flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/40">
-                        <i class="fab fa-facebook-f mr-2"></i> Facebook
-                    </a>
-                    <a href="#"
-                        class="flex items-center bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-500/40">
-                        <i class="fab fa-twitter mr-2"></i> Twitter
-                    </a>
+                        placeholder=" ">
+                    <label for="password">Password</label>
+                    <span class="icon"><i class="fas fa-lock"></i></span>
                 </div>
 
+                <div class="options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-button">Login</button>
+
+                <p class="register-text">
+                    Don't have an account? <a href="#"
+                        class="register-link">Register</a>
+                </p>
             </form>
-            <p class="text-xs text-gray-200 mt-8 text-shadow">
-                © 2025 Classy Login Form. All rights reserved | Design by You.
-            </p>
-
         </div>
 
     </body>
